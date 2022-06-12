@@ -1,0 +1,1 @@
+export const TODOLIST_LS_FIELD = 'app_todolist'

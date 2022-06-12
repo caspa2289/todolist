@@ -1,0 +1,10 @@
+.wrapper {
+    padding: 2rem;
+    overflow: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

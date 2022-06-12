@@ -1,0 +1,32 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    background: ghostwhite;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    padding: 0.5rem 1rem 1rem 1rem;
+    min-height: 8rem;
+    /*max-height: 10rem;*/
+}
+
+.date {
+    font-size: 0.7rem;
+}
+
+.controls {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 0 0.5rem
+}
+
+.text {
+    overflow: auto;
+    grid-column: 1/-1;
+}
+
+.edit {
+    grid-column: 1/-1;
+}
