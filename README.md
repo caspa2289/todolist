@@ -1,4 +1,4 @@
-#Example todo app with React-Redux + Typescript
+# Example todo app with React-Redux + Typescript
 
 # Getting Started with Create React App
 
