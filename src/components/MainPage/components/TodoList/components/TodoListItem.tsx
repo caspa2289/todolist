@@ -18,6 +18,8 @@ const TodoListItem: FC<ITodoItemProps> = ({ date, text, isActive , id}) => {
     const [value, setValue] = useState<string>('')
     const textAreaRef = useRef<HTMLTextAreaElement>(null)
 
+    const dateString = new Date(date).toUTCString()
+
     const onChange = () => {
         textAreaRef.current && setValue(textAreaRef.current.value)
     }
@@ -41,7 +43,7 @@ const TodoListItem: FC<ITodoItemProps> = ({ date, text, isActive , id}) => {
 
     return (
         <div className={styles.wrapper}>
-            <div className={styles.date}>{date}</div>
+            <div className={styles.date}>{dateString}</div>
             <div className={styles.controls}>
                 {!isActive ? (
                     <>
